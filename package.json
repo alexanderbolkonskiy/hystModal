@@ -1,0 +1,55 @@
+{
+  "name": "hystmodal",
+  "version": "1.0.0-beta.4",
+  "type": "module",
+  "description": "Lightweight and flexible JavaScript modal library",
+  "main": "dist/hystmodal.min.js",
+  "module": "dist/hystmodal.esm.js",
+  "types": "lib/index.d.ts",
+  "style": "dist/style.css",
+  "files": [
+    "dist/",
+    "lib/",
+    "README.MD"
+  ],
+  "exports": {
+    ".": "./dist/hystmodal.esm.js",
+    "./css": "./dist/hystmodal.min.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && vite build --mode browser",
+    "lint": "npx eslint ./lib/**/*.ts --ext js,ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AddMoreScripts/hystModal.git"
+  },
+  "keywords": [
+    "modal",
+    "js",
+    "window",
+    "popup"
+  ],
+  "author": "AddMoreScript",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AddMoreScripts/hystModal/issues"
+  },
+  "homepage": "https://github.com/AddMoreScripts/hystModal#readme",
+  "dependencies": {
+    "tua-body-scroll-lock": "^1.2.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
